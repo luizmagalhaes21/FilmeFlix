@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" rel="stylesheet">
+        <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <link rel="icon" type="image/favicon" href="img/j.png">
+    <link rel="stylesheet" href="style.css">
+    <title>FilmeFlix</title>
+</head>
+<body>
+    <div class="containner">
+        
+        <h1>FilmeFlix</h1>
+
+
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">FilmeFlix</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="minha.html">Minha área</a>
+        </li>
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Sua conta
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="ajuda.html">Ajuda</a></li>
+            <li><a class="dropdown-item" href="beneficios.html">Beneficios Premium</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="pedidos.html">Pedidos</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="sair.html" tabindex="-1" aria-disabled="true">Sair</a>
+        </li>
+      </ul>
+       <form id="form">
+      <input type="text" placeholder="Digite Filme + Enter" id="search" class="search" required>
+ 
+    </form>
+    </div>
+  </div>
+</nav>
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+       <img class="d-block w-100" src="img/liga.jpg" alt="jonh wick">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/mortal.jpg" alt="rambo">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/panico1.jpg" alt="panico">
+    </div>
+    <div class="carousel-item">
+     <img class="d-block w-100" src="img/scape.jpg" alt="exterminadordofuturo">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/xmen1.jpg" alt="x-men">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/mercenarios4.jpg" alt="stranger-things">
+    </div>
+    </div>
+  </div>
+    
+    
+
+    <div id="tags"></div>
+    <div id="myNav" class="overlay">
+
+        
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      
+        
+        <div class="overlay-content" id="overlay-content"></div>
+        
+        <a href="javascript:void(0)" class="arrow left-arrow" id="left-arrow">&#8656;</a> 
+        
+        <a href="javascript:void(0)" class="arrow right-arrow" id="right-arrow" >&#8658;</a>
+
+      </div>
+
+    <main id="main"></main>
+    <div class="pagination">
+        <div class="page" id="prev">Página Anterior</div>
+        <div class="current" id="current">1</div>
+        <div class="page" id="next">Proxima Página</div>
+
+    </div>
+     <div class="rodape">
+    <div class="social-links">
+              <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoicHQifQ%3D%3D%22%7D" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="https://www.facebook.com/?locale=pt_BR" class="facebook"><i class="bi bi-facebook" ></i></a>
+              <a href="https://www.instagram.com" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="https://br.linkedin.com/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+            <h6>Criado por Luiz Magalhãesⓒ</h6>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>

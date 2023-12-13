@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    background-repeat:repeat-x;
+    font-family:  sans-serif;
+    margin: 0;
+}
+h1{
+    color: darkred;
+    font-family: cursive;
+    text-align: center;
+}
+h2{
+    color: darkred;
+    font-family: cursive;
+    text-align: center;
+}
+
+
+.imagemsair{
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    text-align: center;
+
+}
+footer {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+footer h1 {
+      margin-bottom: 20px;
+    }
+    footer p {
+      color: #666;
+      margin-bottom: 15px;
+    }
+footer a {
+      color: darkred;
+      text-decoration: none;
+    }
+ 
+    
+    .login-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: red;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    .login-btn:hover {
+      background-color: darkred;
+    }
